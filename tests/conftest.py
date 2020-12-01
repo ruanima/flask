@@ -11,10 +11,13 @@ import pkgutil
 import sys
 import textwrap
 
+sys.path.insert(0, 'src')
+
 import pytest
 from _pytest import monkeypatch
 
 import flask
+print(flask.__file__)
 from flask import Flask as _Flask
 
 
